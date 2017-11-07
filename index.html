@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Layout Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="mediaqueries.css"/>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html.js"></script>
+        <script src="http://css-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+         <script>
+        $(function() {
+            var pull        = $('.pull'); 
+                menu        = $('nav ul'); 
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 600 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <img src="Untitled-1.png" alt="logo"/>
+            </div>
+            <nav id="menu-utama">
+                <a href="#" class="pull">Menu</a>
+                <ul>
+                <li><a href="indek.html">Home</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+  <div id="slider-wrapper">
+        <div class="inner-wrapper">
+            <input checked type="radio" name="slide" class="control" id="Slide1"/>
+                <label for="Slide1" id="s1"></label>
+            <input type="radio" name="slide" class="control" id="Slide2"/>
+                <label for="Slide2" id="s2"></label>
+            <input type="radio" name="slide" class="control" id="Slide3"/>
+                <label for="Slide3" id="s3"></label>
+            <input type="radio" name="slide" class="control" id="Slide4"/>
+                <label for="Slide4" id="s4"></label>
+            <div class="overflow-wrapper">
+                <a class="slide" href=""><img src="https://i.imgur.com/hKju1EC.jpg" alt="xxx"/></a>
+                <a class="slide" href=""><img src="https://i.imgur.com/hKju1EC.jpg" alt="xxx"/></a>
+                <a class="slide" href=""><img src="https://i.imgur.com/hKju1EC.jpg" alt="xxx"/></a>
+                <a class="slide" href=""><img src="https://i.imgur.com/hKju1EC.jpg" alt="xxx"/></a>
+            </div>
+        </div>
+    </div>
+        <div id="home-artikel-left">
+    
+          <div class="artikel"><img src="Millenium.jpg" width="512" height="200" alt="corel">
+            <h1> Night Photography </h1>
+            <b>Nov 01, 2017</b><b>Views : 1,011,497</b>
+            <p>Night photography can be much more rewarding than photography during the day. </p>
+            <a href="Night.html" class="next">Watch This</a>
+            </div>
+       
+          <div class="artikel"><img src="Louvre1.jpg" width="512" height="200" alt="psd">
+          <h1> Long Exposure  </h1>
+          <b>Okt 25, 2017</b><b>Views : 3,487,112</b>
+          <p>Night photography can be much more rewarding than photography during the day. </p>
+          <a href="long.html" class="next">Watch This</a>
+          </div>
+    </div>
+    <div id="home-artikel-right">
+
+          <div class="artikel"><img src="BrooklynBridge.jpg" width="512" height="200" alt="ai">
+            <h1> Bring a flashlight </h1>
+            <b>Okt 12, Illustrator 2017</b><b>Views : 5,532,342</b>
+            <p>Knowing your camera controls really well pays dividends at night.</p>
+             <a href="" class="next">Watch This</a>
+           </div>
+        <div class="artikel"><img src="Dallas1.jpg" width="512" height="200" alt="ai">
+            <h1> Meter for the highlights </h1>
+          <b>Okt 12, 2017</b><b>Views : 5,532,342</b>
+            <p>Determining the proper exposure level can be tricky at night.</p>
+                    <a href="" class="next">Watch This</a>
+           </div>
+    </div>
+             
+            <div id="footer">  
+                <p>Desain Web Copyright &copy; 2017 Royyan Novizar</p>
+            </div>
+        </div>
+    </body>
+</html>

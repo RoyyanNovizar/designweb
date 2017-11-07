@@ -1,0 +1,343 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2017, 12:23:21 PM
+    Author     : user
+*/
+*{ 
+    margin:0;
+    padding: 0;
+    font-family: calibri,segoe ui,arial,rhoma,sans-serif;
+}
+
+body{
+    background-color: #ffffff ;
+}
+
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #dddddd;
+}
+
+#header{
+    background: url() repeat-x #fff;
+    padding: 5px;
+    height: 100px;
+    width: 1000px;
+    overflow: hidden;  
+}
+
+#header img{ width: 130px; height: 90px;}
+
+
+#search{
+    width: 150px; 
+    height: 20px;
+    padding: 0px;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+#header form{
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+#header form input{
+    margin: 2px;
+    margin-top:40px;
+    height: 25px;
+    padding: 2px;
+}
+
+#daftar-artikel{
+    width:650px;
+    float: left;
+}
+
+#home-artikel-left{
+	width:480px;
+	float:left;
+}
+
+#home-artikel-right{
+	width:480px;
+	float:right;
+}
+
+.artikel{
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.artikel img{
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+    height: 165px;
+}
+.artikel b{
+    color: #616060;
+    background: #DDDDDD;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.artikel p{
+    margin: 10px 0;
+}
+
+.artikel a{
+    display: block;
+    text-align: right;
+    color: #636363;
+}
+
+.artikel .next {
+    color:#000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 600; 
+}
+
+.artikel .next:hover {
+    color: #00BFFF;
+    margin-left:10px;
+}
+
+#sidebar{
+    width: 270px;
+    float: right;
+}
+
+#sidebar h2{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#sidebar p{
+    line-height: 20px;
+    color: #636363;
+}
+
+#sidebar ul li a{
+    color: #636363;
+    text-decoration: none;
+}
+
+#footer{
+    clear: both;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #0088FF;
+    padding: 5px;
+    color: #fff;
+}
+
+.form_contact{
+    display: grid;
+    grid-template-coloums:1fr 1fr;
+}
+
+#myform{
+    display: grid;
+    grid-template-coloums:1fr 1fr;
+    grid-gap: 20px;
+}
+
+.full-width{
+    grid-coloumn:1/2;
+}
+.form_contact label{
+    display: block;
+}
+.form_contact p{
+    margin: 0;
+}
+.form_contact button,input, textarea{
+    padding: 1em;
+}
+button{
+    background: lightgray;
+    width: 30%;
+    height: 20px;
+    border: 0;
+    
+}
+button:hover, button:focus{
+    background: gold;
+    outline: 0;
+}
+input:focus, textarea:focus{
+    outline: 3px solid gold;
+}
+
+#menu-utama:before,
+#menu-utama:after {
+    content: " ";
+    display: table;
+}
+#menu-utama:after {
+    clear: both;
+}
+#menu-utama {
+    *zoom: 1;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+body {
+    background-color: #f0f0f0;
+    background-image: none;
+}
+nav {
+  height: 40px;
+ width: 100%;
+  background: #00BFFF;;
+  font-size: 11pt;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 0px 0px 10px black;
+}
+nav ul {
+  padding: 0;
+ margin: 0 auto;
+ width: 500px;
+ height: 40px;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  color: #ffffff;
+ display: inline-block;
+  width: 100px;
+ text-align: center;
+ text-decoration: none;
+  line-height: 40px;
+}
+nav a:hover, nav a:active {
+  background-color: #ecf0f1;
+  color: #333;
+}
+nav a.pull {
+    display: none;
+    background-image: none;
+}
+ 
+
+#slider-wrapper{
+            width: 1000px;
+            height: 400px;
+            
+            position: relative;
+            margin-bottom: 10px;
+            background: rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        
+                #s1{
+                    padding: 6px;
+                    background: #FFFFFF;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 25px;
+                    margin-left: -36px;
+                    border-radius: 20px;
+                    opacity: 0.3;
+                    cursor: pointer;
+                    z-index: 999;
+                }
+                
+                #s2{
+                    padding: 6px;
+                    background: #FFFFFF;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 25px;
+                    margin-left: -12px;
+                    border-radius: 20px;
+                    opacity: 0.3;
+                    cursor: pointer;
+                    z-index: 999;
+                }
+                
+                #s3{
+               padding: 6px;
+                    background: #FFFFFF;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 25px;
+                    margin-left: 12px;
+                    border-radius: 20px;
+                    opacity: 0.3;
+                    cursor: pointer;
+                    z-index: 999;
+                }
+                
+                #s4{
+                 padding: 6px;
+                    background: #FFFFFF;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 25px;
+                    margin-left: 36px;
+                    border-radius: 20px;
+                    opacity: 0.3;
+                    cursor: pointer;
+                    z-index: 999;
+                }
+                
+                #s1:hover, #s2:hover, #s3:hover, #s4:hover{ opacity: 1;}
+                
+            .inner-wrapper{
+                width: 1000px;
+                height: 400px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-bottom: 0px;
+                overflow: hidden;
+            }
+                .control{ display: none;}
+                
+                #Slide1:checked ~ .overflow-wrapper{ margin-left: 0%; }
+                #Slide2:checked ~ .overflow-wrapper{ margin-left: -100%; }
+                #Slide3:checked ~ .overflow-wrapper{ margin-left: -200%; }
+                #Slide4:checked ~ .overflow-wrapper{ margin-left: -300%; }
+                
+                #Slide1:checked + #s1 { opacity: 1; }
+                #Slide2:checked + #s2 { opacity: 1; }
+                #Slide3:checked + #s3 { opacity: 1; }
+                #Slide4:checked + #s4 { opacity: 1; }
+                
+            .overflow-wrapper{
+                width: 400%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow-y: hidden;
+                z-index: 1;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+            
+                .slide img{
+                    width: 25%;
+                    float: left;
+                }
+

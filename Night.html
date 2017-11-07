@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Layout Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="mediaqueries.css"/>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html.js"></script>
+        <script src="http://css-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+         <script>
+        $(function() {
+            var pull        = $('.pull'); 
+                menu        = $('nav ul'); 
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 600 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <img src="Untitled-1.png" alt="logo"/>
+            </div>
+            <nav id="menu-utama">
+                <a href="#" class="pull">Menu</a>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                
+            </nav>        
+             <div id="daftar-artikel">
+                <div class="artikel">
+                    <img src="Millenium.jpg" alt="gambar artikel"/>
+                    <h1>Night Photography</h1>
+                    <b>Nov 01, 2017</b><b>views : 3,487,497</b>
+                    <p>Night photography can be much more rewarding than photography during the day.
+                        Because everything looks different at night, you don’t need to go somewhere exotic to get great pictures. 
+                        Bridges, attractions, and buildings are usually brightly lit at night, and places that might seem rather pedestrian during the day – can make stellar photography subjects at night.
+                        Further, you can take your time when photographing at night, more so than during the day. 
+                        There are generally less people out, and you don’t have to worry about the light changing.
+                        The main challenge when photographing at night is getting a proper exposure.
+                        During the day, you can just walk around and hand hold your camera without worrying about camera shake.
+                        In addition, because of the amount of available light during the day, you don’t need to worry about shooting at a high ISO and the resulting digital noise. At night, however, hand holding is generally not an option and digital noise can be a major problem.
+                        The principles of exposure work the same way at night as during the day – you will just need a lot more time to allow light into your camera. It goes without saying that you will need a tripod to stabilize your camera, and a remote shutter release to keep from moving anything during the exposure. But with these changes made, you can get out and explore the night with your camera. 
+                        When you do, here are some tips to keep in mind to help you maximize the experience.</p> 
+                </div>                
+            </div>
+            <div id="sidebar">
+                <h2>Photography</h2>
+                <p>Photography is the science, art, application and practice of creating durable images 
+                    by recording light or other electromagnetic radiation, either electronically 
+                    by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film
+                </p>
+                <h2>Artikel berdasarkan kategori</h2>
+                <ul>
+                    <li><a href="">Photography</a></li>
+                    <li><a href="">Long Exposure</a></li>
+                    <li><a href="">Landscape Photo</a></li>
+                </ul>
+            </div>
+            <div id="footer">  
+                <p>Desain Web Copyright &copy; 2017 Royyan Novizar</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+
